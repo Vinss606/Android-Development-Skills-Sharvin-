@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Emission Entry"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- travel -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Travel"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spTravelMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etTravelDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Distance (km)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp" />
+
+        <!-- electricity -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Electricity"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spElectricSource"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etElectricityKwh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="kWh used"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp" />
+
+        <!-- waste -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Household waste"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etWasteKg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Waste (kg)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:backgroundTint="#40916C"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total: 0 kg CO₂"
+            android:textSize="16sp"
+            android:layout_marginTop="14dp" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save to Cloud"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#40916C"
+            android:textColor="@android:color/white"
+            android:enabled="false" />
+
+    </LinearLayout>
+</ScrollView>

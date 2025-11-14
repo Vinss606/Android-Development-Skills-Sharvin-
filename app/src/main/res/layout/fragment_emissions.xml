@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- Donut / Pie -->
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Month selector -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:id="@+id/tvPrevMonth"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="&lt;"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvMonthTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="July 2025"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvNextMonth"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="&gt;"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- List of categories -->
+    <LinearLayout
+        android:id="@+id/rowTravel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Travel"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvTravelValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0 kg"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowElectricity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Electricity"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvElectricValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0 kg"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowWaste"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Household Waste"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvWasteValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0 kg"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- total (optional) -->
+    <TextView
+        android:id="@+id/tvTotalMonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total: 0.0 kg CO₂"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp" />
+
+</LinearLayout>

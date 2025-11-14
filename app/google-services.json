@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "367532981281",
+    "project_id": "carbon-calculator-e3b83",
+    "storage_bucket": "carbon-calculator-e3b83.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367532981281:android:3ea691053b28e5b0633760",
+        "android_client_info": {
+          "package_name": "com.example.carboncalculator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7fri0e7WTkhCX3XvbUcUxkYIwwlIiG8g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
